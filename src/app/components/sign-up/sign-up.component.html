@@ -1,0 +1,44 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+
+    <div class="px-logo">
+      <a href="" target="_blank">
+        <img src="" alt="">
+      </a>
+    </div>
+
+    <div class="authBlock">
+      <h3>Registrarse</h3>
+
+      <div class="formGroup">
+        <input type="email" class="formControl" placeholder="Email" #userEmail required>
+      </div>
+
+      <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Contraseña" #userPwd required>
+      </div>
+
+      <div class="formGroup">
+        <input type="button" class="btn btnPrimary" value="Registar" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+      </div>
+
+      <div class="formGroup">
+        <span class="or"><span class="orInner">O</span></span>
+      </div>
+
+      <!-- Continue with Google -->
+      <div class="formGroup">
+        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <i class="fab fa-google-plus-g"></i>
+          Ingresa con Google
+        </button>
+      </div>
+      
+    </div>
+
+    <div class="redirectToLogin">
+      <span>¿Ya tienes una cuenta? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+    </div>
+  </div>
+
+</div>
