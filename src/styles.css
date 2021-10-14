@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
@@ -233,21 +233,21 @@ input:-moz-placeholder {
   color: #ffffff;
   text-decoration: underline;
 }
-
+ */
 /* * Sidebar */
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 100; */
   /* Behind the navbar */
-  padding: 48px 0 0;
+  /* padding: 48px 0 0; */
   /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+/*   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
-
-.sidebar-sticky {
+ */
+/* .sidebar-sticky {
   position: relative;
   top: 0;
   height: calc(100vh - 48px);
@@ -255,8 +255,8 @@ input:-moz-placeholder {
   overflow-x: hidden;
   overflow-y: auto;
 }
-
-@supports ((position:-webkit-sticky) or (position:sticky)) {
+ */
+/* @supports ((position:-webkit-sticky) or (position:sticky)) {
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -290,10 +290,10 @@ a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
   color: #E91E63;
   background: #efefef;
-}
+} */
 
 /* * Content */
-[role="main"] {
+/* [role="main"] {
   padding-top: 48px;
 }
 
@@ -306,10 +306,10 @@ a:not([href]):not([tabindex]):hover {
   margin-left: 15px;
   position: relative;
   top: -1px;
-}
+} */
 
 /* * Navbar */
-.navbar-brand {
+/* .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
 }
@@ -324,9 +324,9 @@ a:not([href]):not([tabindex]):hover {
   color: #fff;
   background-color: rgba(255, 255, 255, .1);
   border-color: rgba(255, 255, 255, .1);
-}
+} */
 
-.form-control-dark:focus {
+/* .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
@@ -373,10 +373,10 @@ i {
 .btn-primary.focus,
 .btn-primary:focus {
   box-shadow: none;
-}
+} */
 
 /* Pagination */
-body pagination-template {
+/* body pagination-template {
   padding: 0;
   margin: 8px 0 0;
   float: left;
@@ -396,9 +396,9 @@ body .ngx-pagination .current {
 .ngx-pagination button:hover {
   text-decoration: none;
 }
-
+ */
 /* Error */
-.error {
+/* .error {
   color: red;
   margin-top: 5px;
 }
@@ -411,9 +411,9 @@ input.ng-invalid.ng-touched {
 .btn-success:disabled {
   cursor: not-allowed;
 }
-
+ */
 /* Nav */
-body .navbar {
+/* body .navbar {
   padding: 6px 0 !important;
 }
 
@@ -432,19 +432,19 @@ body .navbar-brand {
 
 .sidebar-sticky {
   padding-top: 1.2rem !important;
-}
+} */
 
 /* Form */
-label {
+/* label {
   font-weight: 500;
 }
 
 .form-control {
   padding: 1.375rem .75rem;
-}
+} */
 
 /* Misc */
-.no-data img {
+/* .no-data img {
   max-width: 420px;
   margin: 20px auto 0;
 }
@@ -547,10 +547,10 @@ body .table thead th {
 
 .rounded-circle {
   max-width: 150px;
-}
+} */
 
 /* Responsive */
-@media(max-width:767px) {
+/* @media(max-width:767px) {
   .sidebar {
     position: static;
     padding: 40px 0 10px;
@@ -663,4 +663,4 @@ body .table thead th {
   .px-logo {
     display: none;
   }
-}
+} */

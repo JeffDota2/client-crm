@@ -1,0 +1,39 @@
+.we-navbar{
+    position: absolute;
+    width: 100%;
+    background: rgb(207, 207, 207);
+}
+.we-navbar img {
+    float: right;
+}
+.we-sidebar{
+    position: absolute;
+    background: rgb(207, 207, 207);
+    height: 100%;
+}
+.logo{
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+ul, ol, li{
+    list-style: none;
+    padding: 0px;
+}
+
+.ul{
+    padding-left: 30px;
+}
+
+.we-btn{
+    font-size: large;
+    padding: 0;
+    background: rgb(207, 207, 207);
+    border: none;
+    border-radius: none;
+}
+
+.we-btn:hover{
+    background: rgb(185, 184, 184);
+}
