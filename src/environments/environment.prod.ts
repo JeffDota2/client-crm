@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  API_URL: 'http://127.0.0.1:8000/api/',
   firebase : {
     apiKey: "AIzaSyCIR83qdOdMxYv7lssIwNuZFqPYzsL8QY0",
     authDomain: "logcrm-87159.firebaseapp.com",

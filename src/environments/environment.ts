@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  API_URL: 'http://127.0.0.1:8000/api/',
   firebase : {
     apiKey: "AIzaSyCIR83qdOdMxYv7lssIwNuZFqPYzsL8QY0",
     authDomain: "logcrm-87159.firebaseapp.com",
@@ -14,6 +15,8 @@ export const environment = {
     measurementId: "G-4KCDNEVE51"
   }
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
