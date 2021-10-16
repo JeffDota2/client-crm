@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from "../../shared/services/auth.service";
 
 @Component({
@@ -10,9 +11,17 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
+    private router:Router
   ) { }
 
   ngOnInit(): void {
+  }
+  
+  godashboard(){
+    this.router.navigate(['/dashboard']);
+  }
+  goPerfil(){
+    this.router.navigate(['/dashboard/perfil']);
   }
 
 }

@@ -1,92 +1,71 @@
-<div class="we-navbar">
+<nav class="we-navbar">
   <div class="logo">
-    <a routerLink="/dashboard" class="d-flex align-items-center text-decoration-none">
+    <a (click)="godashboard()" class="d-flex align-items-center text-decoration-none">
       <img class="logo" src="../../../assets/logo/logo.jpg">
     </a>
   </div>
-</div>
+</nav>
 
-<div class="d-flex flex-column flex-shrink-0 p-3 we-sidebar" style="width: 220px;">
-  <ul>
-    <!-- Whatsapp -->
-    <li>
-      <button class="we-btn" data-bs-toggle="collapse" data-bs-target="#whatsapp-collapse">
-        <i class="fab fa-whatsapp"></i>
-        Whatsapp
-      </button>
-      <div class="collapse show" id="whatsapp-collapse">
-        <ul class="ul">
-          <li><a href="" class="link-dark">otros</a></li>
-        </ul>
-      </div>
-    </li>
-    <!-- Notifications -->
-    <li>
-      <button class="we-btn" data-bs-toggle="collapse" data-bs-target="#bell-collapse">
-        <i class="far fa-bell"></i>
-        Notificaiones
-      </button>
-      <div class="collapse show" id="bell-collapse">
-        <ul class="ul">
-          <li><a href="" class="link-dark">otros</a></li>
-        </ul>
-      </div>
-    </li>
-    <!-- chat -->
-    <li>
-      <button class="we-btn" data-bs-toggle="collapse" data-bs-target="#chat-collapse">
-        <i class="far fa-comments"></i>
-        Chat
-      </button>
-      <div class="collapse show" id="chat-collapse">
-        <ul class="ul">
-          <li><a href="" class="link-dark">otros</a></li>
-        </ul>
-      </div>
-    </li>
-    <!-- Phone -->
-    <li>
-      <button class="we-btn" data-bs-toggle="collapse" data-bs-target="#phone-collapse">
-        <i class="fas fa-phone-volume"></i>
-        teléfono
-      </button>
-      <div class="collapse show" id="phone-collapse">
-        <ul class="ul">
-          <li><a href="" class="link-dark">otros</a></li>
-        </ul>
-      </div>
-    </li>
-    <!-- reports -->
-    <li>
-      <button class="we-btn" data-bs-toggle="collapse" data-bs-target="#report-collapse">
-        <i class="fas fa-chart-bar"></i>
-        teléfono
-      </button>
-      <div class="collapse show" id="report-collapse">
-        <ul class="ul">
-          <li><a href="" class="link-dark">otros</a></li>
-        </ul>
-      </div>
-    </li>
-    <!-- settings -->
-    <li>
-      <button class="we-btn" data-bs-toggle="collapse" data-bs-target="#setting-collapse">
-        <i class="fas fa-cog"></i>
-        configuración
-      </button>
-      <div class="collapse show" id="setting-collapse">
-        <ul class="ul">
-          <li><a routerLink="/dashboard/perfil" class="link-dark">Mi perfil</a></li>
-          <li><a href="" class="link-dark">Grupos y usuarios</a></li>
-          <li><a href="" class="link-dark">Estado de la cuenta</a></li>
-          <li><a href="" class="link-dark">ayuda</a></li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <a class="nav-link" (click)="authService.SignOut()">
-        <i class="fas fa-sign-out-alt"></i>Salir
-      </a>
-    </li>
-  </ul>
+<div class="we-sidebar p-3 " style="width: 220px;">
+  <div class="options">
+    <ul>
+      <!-- Whatsapp -->
+      <li>
+        <div class="menu">
+          <i class="fab fa-whatsapp fa-2x"></i>
+          Whatsapp
+        </div>
+      </li>
+      <!-- Notifications -->
+      <li>
+        <div class="menu">
+          <i class="far fa-bell fa-2x"></i>
+          Notificaiones
+        </div>
+      </li>
+      <!-- chat -->
+
+      <li>
+        <div class="menu">
+          <i class="far fa-comments fa-2x"></i>
+          Chat
+        </div>
+      </li>
+      <!-- Phone -->
+      <li>
+        <div class="menu">
+          <i class="fas fa-phone-volume fa-2x"></i>
+          Teléfono
+        </div>
+      </li>
+      <!-- reports -->
+      <li>
+        <div class="menu" >
+          <i class="fas fa-chart-bar fa-2x"></i>
+          Reportes
+        </div>
+      </li>
+      <!-- settings -->
+      <li>
+        <div class="menu" data-bs-toggle="collapse" data-bs-target="#setting-collapse">
+          <i class="fas fa-cog fa-2x"></i>
+          Configuración
+        </div>
+        <div class="submenu collapse show" id="setting-collapse">
+          <ul>
+            <li class="x" (click)="goPerfil()"><a><i class="fas fa-user"></i>Mi perfil</a></li>
+            <li class="x"><a href=""><i class="fas fa-users"></i>Grupos y usuarios</a></li>
+            <li class="x"><a href=""><i class="fas fa-calculator"></i>Estado de la cuenta</a></li>
+            <li class="x"><a href=""><i class="far fa-question-circle"></i>ayuda</a></li>
+            <li class="x">
+              <a (click)="authService.SignOut()">
+                <i class="fas fa-sign-out-alt fa-1x"></i>Salir
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- salir -->
+    </ul>
+  </div>
 </div>
