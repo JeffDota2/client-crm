@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* html,
+
 body {
   margin: 0;
   padding: 0;
@@ -22,14 +22,6 @@ body {
   vertical-align: text-bottom;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-}
 
 .media-body h1 {
   font-weight: 300;
@@ -50,16 +42,6 @@ h6 {
   font-weight: 600;
 }
 
-.px-logo {
-  display: block;
-  clear: both;
-  margin: 0 auto 20px;
-  width: 220px;
-}
-
-.px-logo a img {
-  width: 100%;
-}
 
 .displayTable {
   display: table;
@@ -233,7 +215,7 @@ input:-moz-placeholder {
   color: #ffffff;
   text-decoration: underline;
 }
- */
+
 /* * Sidebar */
 /* .sidebar {
   position: fixed;
