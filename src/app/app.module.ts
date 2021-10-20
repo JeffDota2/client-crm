@@ -28,6 +28,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClientsComponent } from './components/clients/clients.component';
 import { CommonModule } from '@angular/common';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 
@@ -42,7 +43,8 @@ import { CommonModule } from '@angular/common';
     VerifyEmailComponent,
     NavbarComponent,
     PerfilComponent,
-    ClientsComponent
+    ClientsComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,

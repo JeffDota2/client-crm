@@ -58,3 +58,15 @@
       color: #ffffff;
       text-decoration: underline;
     }
+
+    .iconoInput {
+      color: #141414;
+      font-size: 15px;
+      position: absolute;
+      left: 25px;
+      width: 220%;
+      
+      padding-top: 10px;}
+      .inputPadding {
+      padding-left: 40px;
+      width: 220%;}

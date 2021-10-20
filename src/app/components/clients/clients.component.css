@@ -1,5 +1,37 @@
 .we-clients{
     position: absolute;
     top: 55px;
-    left: 230px;
+    left: 300px;
+
 }
+
+table{
+    position: relative;
+    top: -300px; 
+    left: 500px;
+}
+
+li{
+    color: red;
+}
+
+.form-group{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.form-control{
+    border-color: rgb(105, 95, 3);
+
+}
+.iconoInput {
+    color: #141414;
+    font-size: 15px;
+    position: absolute;
+    left: 25px;
+    width: 220%;
+    
+    padding-top: 10px;}
+    .inputPadding {
+    padding-left: 40px;
+    width: 220%;}
