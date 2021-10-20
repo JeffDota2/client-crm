@@ -43,13 +43,29 @@
                 <th scope="col">dirección</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody >
             <tr *ngFor="let client of dataClients">
                 <td>{{client.name}}</td>
                 <td>{{client.email}}</td>
                 <td>{{client.phone}}</td>
                 <td>{{client.address}}</td>
+                <input type="submit" value="Eliminar" (click)="openModal('deleted-client-modal', client)">
             </tr>
         </tbody>
     </table>
 </div>
+
+<!-- modal para eliminar -->
+<div id="deleted-client-modal" class="pop-dialog">
+    <!-- Modal content -->
+    <div class="pop-dialog-content">
+      <span class="pop-dialog-close" (click)="closeModal('deleted-client-modal')">&times;</span>
+      <form>
+        <h2>¿Estas seguro de eliminar este cliente?</h2>
+        <div>
+          <input type="submit" value="Eliminar" (click)="deleteClient()">
+          <input type="reset" value="Cancelar" (click)="closeModal('deleted-client-modal')">
+        </div>
+      </form>
+    </div>
+  </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AplicationService } from '../../shared/services/aplication/aplication.service';
 
+
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html',
@@ -10,6 +11,7 @@ import { AplicationService } from '../../shared/services/aplication/aplication.s
 export class ClientsComponent implements OnInit {
 
   public dataClients = [];
+  private idClient;
   public createClientForm: FormGroup;
 
   constructor(
@@ -53,7 +55,26 @@ export class ClientsComponent implements OnInit {
     return this.createClientForm.get('address');
   }
 
+// -------------------------------------------------------------------------------
+  // Métodos de lo modales.
+// -------------------------------------------------------------------------------
+  closeModal(name: string): void {
+    const modal = document.getElementById(name);
+    modal.style.display = 'none';
+  }
+
+  openModal(name: string, data?): void {
+    const modal = document.getElementById(name);
+    modal.style.display = 'block';
+
+    if (data) {
+      this.idClient = data.id;
+    }
+  
+  }
+// -------------------------------------------------------------------------------
   /* CRUD de los clientes */
+  // -------------------------------------------------------------------------------
   getClients(): void {
     this.appService.get(`clients`).subscribe(
       res => {
@@ -92,7 +113,23 @@ export class ClientsComponent implements OnInit {
       } else {
         console.log('Rellene el formulario formularios', 'Esta sin datos.');
       }
+  }
 
+  deleteClient(): void {
+    this.appService.delete(`clients/${this.idClient}`).subscribe(
+      res => {
+        console.log('entre a lo bueno');
+        console.log('cliente eliminado.');
+        this.getClients();
+      },
+      error => {
+        console.log('entre a lo malo');
+        console.log(error);
+        console.log('Error con el servidor.', 'error al borrar');
+      }
+      );
+      this.closeModal('deleted-client-modal');
+      this.idClient = undefined;
   }
 
 }

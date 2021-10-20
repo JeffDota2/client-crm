@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Reactive Form
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 // App routing modules
 import { AppRoutingModule } from './shared/routing/app-routing.module';
@@ -49,11 +49,12 @@ import { ChatComponent } from './components/chat/chat.component';
   imports: [
     BrowserModule,
     CommonModule, //necesario para usar las directivas ngfor, ngif, etc.
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [AuthService],

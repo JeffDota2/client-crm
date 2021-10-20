@@ -19,4 +19,9 @@ export class AplicationService {
     const url = `${environment.API_URL}${query}`;
     return this.http.post<any>(url, data);
   }
+
+  delete(query: string): Observable<any> {
+    const url = `${environment.API_URL}${query}`;
+    return this.http.delete<any>(url);
+  }
 }
