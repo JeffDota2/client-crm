@@ -34,13 +34,15 @@
       <!-- Phone -->
       <li>
         <div class="menu">
-          <i class="fas fa-phone-volume fa-2x"></i>
-          Teléfono
+          <a (click)="goClients()">
+            <i class="fas fa-users fa-2x"></i>
+            Clientes
+          </a>
         </div>
       </li>
       <!-- reports -->
       <li>
-        <div class="menu" >
+        <div class="menu">
           <i class="fas fa-chart-bar fa-2x"></i>
           Reportes
         </div>
@@ -54,11 +56,10 @@
         <div class="submenu collapse show" id="setting-collapse">
           <ul>
             <li class="x" (click)="goPerfil()"><a><i class="fas fa-user"></i>Mi perfil</a></li>
-            <li class="x"><a href=""><i class="fas fa-users"></i>Grupos y usuarios</a></li>
-            <li class="x"><a href=""><i class="fas fa-calculator"></i>Estado de la cuenta</a></li>
-            <li class="x"><a href=""><i class="far fa-question-circle"></i>ayuda</a></li>
+            <li class="x"><a><i class="fas fa-calculator"></i>Estado de la cuenta</a></li>
+            <li class="x"><a><i class="far fa-question-circle"></i>ayuda</a></li>
             <li class="x">
-              <a (click)="authService.SignOut()">
+              <a (click)="authService.SignOut()" (click)="logout()">
                 <i class="fas fa-sign-out-alt fa-1x"></i>Salir
               </a>
             </li>

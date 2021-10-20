@@ -16,12 +16,21 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  logout(){
+    this.authService.logout();
+  }
+
+  /* redirecionamiento */
   
   godashboard(){
     this.router.navigate(['/dashboard']);
   }
   goPerfil(){
     this.router.navigate(['/dashboard/perfil']);
+  }
+  goClients(){
+    this.router.navigate(['/dashboard/clients']);
   }
 
 }

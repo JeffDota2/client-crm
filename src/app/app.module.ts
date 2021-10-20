@@ -26,6 +26,10 @@ import { AuthService } from "./shared/services/auth.service";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClientsComponent } from './components/clients/clients.component';
+import { CommonModule } from '@angular/common';
+
+
 
 
 @NgModule({
@@ -37,10 +41,12 @@ import { HttpClientModule } from '@angular/common/http';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     NavbarComponent,
-    PerfilComponent
+    PerfilComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule, //necesario para usar las directivas ngfor, ngif, etc.
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,

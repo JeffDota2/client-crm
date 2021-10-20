@@ -8,19 +8,26 @@
     </div>
 
     <div class="authBlock">
-      <h3> Bienvenido a FIT-CRM</h3>
-      <div class="formGroup">
-        <input type="text" class="formControl" placeholder="Usuario" #userName required>
-      </div>
+      <!-- Formulario de logeo -->
+      <form [formGroup]="loginForm" (submit)="login()">
+        <h3> Bienvenido a FIT-CRM</h3>
 
-      <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Contraseña" #userPassword required>
-      </div>
+        <div class="form-group">
+          <input class="form-control" type="text" formControlName="email" placeholder="email" required>
+        </div>
 
-      <!-- Calling SignIn Api from AuthService -->
-      <div class="formGroup">
-        <input type="button" class="btn btnPrimary" value="Ingresar" (click)="authService.SignIn(userName.value, userPassword.value)">
-      </div>
+        <div class="form-group">
+          <input class="form-control" type="password" formControlName="password" placeholder="contraseña" #userPassword required>
+        </div>
+
+        <!--  boton para el envio de la data  -->
+        <button class="btn btn-form" [disabled]="loginForm.invalid">Iniciar Sesión</button>
+  
+        <!-- Calling SignIn Api from AuthService -->
+        <!-- <div class="formGroup">
+          <input type="button" class="btn btnPrimary" value="Ingresar" (click)="authService.SignIn(userName.value, userPassword.value)">
+        </div> -->
+      </form>
 
       <div class="formGroup">
         <span class="or"><span class="orInner">O</span></span>

@@ -38,7 +38,7 @@ export class AuthService {
         })
     }
 
-    /* api nuestra */
+    /* metodos para nuestra api */
 
     register(data): any {
         this.http.post<any>(`${environment.API_URL}register/`, {
@@ -56,6 +56,11 @@ export class AuthService {
                     console.log(err.error.data);
                 }
             });
+    }
+
+    login(query: string, data): Observable<any> {
+        const url = `${environment.API_URL}${query}`;
+        return this.http.post<any>(url, data);
     }
 
 
@@ -142,6 +147,23 @@ export class AuthService {
         return userRef.set(userData, {
             merge: true
         })
+    }
+
+    loggedIn(): boolean {
+        // !!-> devuelve true si al expresion existe
+        return !!localStorage.getItem('token');
+      }
+    
+    logout(){
+        this.http.get<any>(`${environment.API_URL}logout`).subscribe(
+            res => {
+                console.log(res);
+            },
+            err => {
+                console.log(err);
+            });
+        localStorage.removeItem('token');
+        this.router.navigate(['sign-in']);
     }
 
     // Sign out
