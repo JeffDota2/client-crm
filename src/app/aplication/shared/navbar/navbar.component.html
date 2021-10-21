@@ -1,66 +1,72 @@
-<nav class="we-navbar">
-  <div class="logo">
-    <a (click)="godashboard()" class="d-flex align-items-center text-decoration-none">
-      <img class="logo" src="../../../assets/logo/logo.jpg">
-    </a>
-  </div>
-</nav>
-
-<div class="we-sidebar p-3 " style="width: 220px;">
-  <div class="options">
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>fir crm</h2>
     <ul>
+      <!-- Divisor -->
+      <hr class="sidebar-divider my-0">
+  
+      <!-- Dashboard -->
+      <li >
+        <a  (click)=" godashboard()">
+          <i class="fas fa-1x fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+  
+      <!-- Divisor -->
+      <hr class="sidebar-divider my-0">
+  
       <!-- Whatsapp -->
-      <li>
-        <div class="menu">
+      <li >
           <a (click)="goWhats()">
-            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-whatsapp fa-1x"></i>
             Whatsapp
           </a>
-        </div>
       </li>
       <!-- Notifications -->
       <li>
-        <div class="menu">
-          <i class="far fa-bell fa-2x"></i>
+        <a>
+          <i class="far fa-bell fa-1x"></i>
           Notificaiones
-        </div>
+        </a>
       </li>
       <!-- chat -->
-
+  
       <li>
-        <div class="menu">
-          <i class="far fa-comments fa-2x"></i>
+        <a>
+          <i class="far fa-comments fa-1x"></i>
           Chat
-        </div>
+        </a>
       </li>
       <!-- Phone -->
       <li>
-        <div class="menu">
           <a (click)="goClients()">
-            <i class="fas fa-users fa-2x"></i>
+            <i class="fas fa-users fa-1x"></i>
             Clientes
           </a>
-        </div>
       </li>
       <!-- reports -->
       <li>
-        <div class="menu">
-          <i class="fas fa-chart-bar fa-2x"></i>
+        <a>
+          <i class="fas fa-chart-bar fa-1x"></i>
           Reportes
-        </div>
+        </a>
+
       </li>
+  
+      <!-- Divisor -->
+      <hr class="sidebar-divider my-0">
+  
       <!-- settings -->
       <li>
-        <div class="menu" data-bs-toggle="collapse" data-bs-target="#setting-collapse">
-          <i class="fas fa-cog fa-2x"></i>
+        <div data-bs-toggle="collapse" data-bs-target="#setting-collapse">
+          <i class="fas fa-cog fa-1x"></i>
           Configuración
         </div>
         <div class="submenu collapse show" id="setting-collapse">
           <ul>
-            <li class="x" (click)="goPerfil()"><a><i class="fas fa-user"></i>Mi perfil</a></li>
-            <li class="x"><a><i class="fas fa-calculator"></i>Estado de la cuenta</a></li>
-            <li class="x"><a><i class="far fa-question-circle"></i>ayuda</a></li>
-            <li class="x">
+            <li (click)="goPerfil()"><a><i class="fas fa-user"></i>Mi perfil</a></li>
+            <li ><a><i class="far fa-question-circle"></i>ayuda</a></li>
+            <li >
               <a (click)="authService.SignOut()" (click)="logout()">
                 <i class="fas fa-sign-out-alt fa-1x"></i>Salir
               </a>
@@ -68,7 +74,15 @@
           </ul>
         </div>
       </li>
-      <!-- salir -->
     </ul>
+  </div>
+  <!-- navbar -->
+  <div class="main_content">
+    <div class="header">
+      Bienvenido
+        <a>
+          <img class="logo" src="../../../assets/logo/logo.jpg">
+        </a>
+    </div>
   </div>
 </div>
