@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//inicio servicio
+import {CargarScriptsService} from './cargar-scripts.service';
+//fin servicio
+
+
 // Reactive Form
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
@@ -54,7 +59,8 @@ import { WebModule } from './web/web.module';
     AngularFirestoreModule,
     HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,
+    CargarScriptsService],
   bootstrap: [AppComponent]
 })
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CargarScriptsService } from 'src/app/cargar-scripts.service';
 
 @Component({
   selector: 'app-whats',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatsComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _CargarScripts:CargarScriptsService) { 
+
+    _CargarScripts.Carga(["whats/form"]);
+  }
 
   ngOnInit(): void {
   }

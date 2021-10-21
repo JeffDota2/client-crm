@@ -1,3 +1,53 @@
 <div class="we-whats">
-    <p>whats works!</p>
+<div class="authBlock">
+      <div class="px-logo">
+        <a href="https://www.positronx.io" target="_blank">
+          <img src="//blogger.googleusercontent.com/img/a/AVvXsEgRy_USHsx3k_hFy9lCEc-QMFOsh-mJ7HkQUwkOfKuW1plSHsrpi-fSQ3IMIycEgvyH2tm_KP1Aj_oJKWqwFk3bUInuPy_pl3R3G6BdzmemixPap2m7rjx0-jn3DqjMHulecpSYmsaAHcyY_rLzLIySSHgGHkUcSghYiFn8uF93O7rICkbKT33Nhowk=s320" alt="" >
+        </a>
+      </div>
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu reserva</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Indica la hora de tu reserva</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+      <label for="empleado" class="formulario__label"
+        >EMPLEADO de preferencia</label
+      >
+      <select id="empleado" name="listaempleados" class="formulario__input">
+        <option>JEFFERSON</option>
+        <option>JACKSON</option>
+        <option>JAVIER</option>
+        <option>DANIEL</option>
+      </select>
+
+      <label for="servicio" class="formulario__label"
+        >¿Cuál es el servicio que se desea realizar?</label
+      >
+      <select id="servicio" name="listaservicios" class="formulario__input">
+        <option>CROSSFIT - $22</option>
+        <option>PESAS- $12</option>
+        <option>BAILE  - $8</option>
+        
+      </select>
+    </div>
+      <div id="respuesta"></div>
+     <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
 </div>
