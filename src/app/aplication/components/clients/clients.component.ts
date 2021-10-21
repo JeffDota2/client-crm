@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AplicationService } from '../../shared/services/aplication/aplication.service';
+import { AplicationService } from '../../../shared/services/aplication/aplication.service';
 
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from "../../shared/services/auth.service";
+import { AuthService } from "../../../shared/services/auth.service";
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 
@@ -52,7 +52,7 @@ export class SignInComponent implements OnInit {
 
         });
         localStorage.setItem('token', res.token);
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/app/tablero']);
       }
     }, error => {
       console.log(error);

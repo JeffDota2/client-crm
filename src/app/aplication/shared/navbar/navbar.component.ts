@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from "../../shared/services/auth.service";
+import { AuthService } from "../../../shared/services/auth.service";
 
 @Component({
   selector: 'app-navbar',
@@ -24,13 +24,13 @@ export class NavbarComponent implements OnInit {
   /* redirecionamiento */
   
   godashboard(){
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/app/tablero']);
   }
   goPerfil(){
-    this.router.navigate(['/dashboard/perfil']);
+    this.router.navigate(['/app/tablero/perfil']);
   }
   goClients(){
-    this.router.navigate(['/dashboard/clients']);
+    this.router.navigate(['/app/tablero/clientes']);
   }
 
 }
