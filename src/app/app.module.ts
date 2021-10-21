@@ -26,7 +26,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ChatComponent } from './web/components/chat/chat.component';
 
-/* Modulos de la aplicación */
 import { DashboardModule } from './aplication/dashboard.module';
 import { WebModule } from './web/web.module';
 

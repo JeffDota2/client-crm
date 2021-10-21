@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { WhatsComponent } from './components/whats/whats.component';
 
 
 const routes: Routes = [
@@ -12,10 +13,11 @@ const routes: Routes = [
     // user
     path: 'app', component: DashboardComponent,
     children: [
-      { path: 'tablero', component: DashboardComponent},
-      {path: 'tablero/clientes', component:ClientsComponent },
-      {path: 'tablero/perfil', component:PerfilComponent},
-      { path: '', redirectTo: 'tablero', pathMatch: 'full'},
+      { path: 'tablero', component: DashboardComponent },
+      { path: 'tablero/clientes', component: ClientsComponent },
+      { path: 'tablero/perfil', component: PerfilComponent },
+      { path: 'tablero/whats', component: WhatsComponent },
+      { path: '', redirectTo: 'tablero', pathMatch: 'full' },
     ], /* canActivate: [AuthGuard] */
   }
 ];

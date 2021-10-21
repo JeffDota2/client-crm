@@ -32,5 +32,8 @@ export class NavbarComponent implements OnInit {
   goClients(){
     this.router.navigate(['/app/tablero/clientes']);
   }
+  goWhats(){
+    this.router.navigate(['/app/tablero/whats']);
+  }
 
 }

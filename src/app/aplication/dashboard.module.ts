@@ -9,6 +9,7 @@ import { ClientsComponent } from './components/clients/clients.component';
 
 import { DashBoardRoutingModule } from './dashboard-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WhatsComponent } from './components/whats/whats.component';
 
 
 
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     NavbarComponent,
     ClientsComponent,
-    PerfilComponent
+    PerfilComponent,
+    WhatsComponent
   ],
   imports: [
     CommonModule,

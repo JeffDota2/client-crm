@@ -16,7 +16,6 @@ import { WebRoutingModule } from './web-routing.module';
   declarations: [
     HomeComponent,
     SignInComponent,
-
   ],
   imports: [
     CommonModule,
