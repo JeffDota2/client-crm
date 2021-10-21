@@ -1,24 +1,27 @@
-/* estilos al navbar */
-.we-navbar{
-    position: absolute;
-    width: 100%;
-    background: rgba(149,148,149,255);
-    /* sombra al navbar */
+
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+/* Sidebar */
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(165, 35, 35);
+    padding: 20px 0;
+    /* sombra al didebar */
     /* box-showdow: x y dispercion tamaño*/
     box-shadow: 0px 2px 4px 0px black;
 }
-.logo{
-    float: right;
-    width: 55px;
-    height: 55px;
-}
-/* estilos al sidebar */
-.we-sidebar{
-    position: absolute;
-    background: rgba(142,152,146,255);
-    /* box-showdow: x y dispercion tamaño*/
-    box-shadow: 1px 0px 4px 0px black;
-    height: 100%;
+
+.wrapper .sidebar h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 ul, ol, li{
@@ -26,41 +29,52 @@ ul, ol, li{
     padding: 0px;
 }
 
-.options{
-    width: 100%;
-    position: relative;
-    /* border: 1px solid black; */
-    top: 50px;
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0, 0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.420);
+}
+
+.wrapper .sidebar ul li a{
+    color: #ffffff;
+    display: block;
+}
+
+.wrapper .sidebar ul li:hover{
+    cursor: pointer;
+}
+
+.wrapper .sidebar ul li a:hover{
+    color: black;
 }
 
 /* tamaño para los iconos fa-xs fa-sm fa-lg fa-2x fa-3x fa-4x fa-5x fa-10x */
 i{
     color: white;
-    padding: 10px;
-    width: 30%;
-    text-align: center;
+    padding: 8px;
 }
-.menu{
-    display: flex;
-    align-items: center;
-    font-size: large;
+
+.wrapper .main_content{
+    width: 1100%;
+    margin-left: 200px;
 }
-.menu:hover{
-    background: rgb(185, 184, 184);
-    border-radius: 0px 0px 20px 0px;
-    margin-left: 20px;
-    cursor: pointer;
+
+.wrapper .main_content .header{
+    padding: 20px;
+    background: rgb(243, 236, 236);
+    border-bottom: 2px solid rgb(165, 35, 35);
+    /* sombra al navbar */
+    /* box-showdow: x y dispercion tamaño*/
+    box-shadow: 0px 2px 4px 0px rgb(165, 35, 35);
+
 }
 
 .submenu{
-    padding-left: 60px;
+    padding-left: 25px;
 }
 
-.x:hover{
-    background: rgb(185, 184, 184);
-    border-radius: 0px 0px 20px 0px;
-    margin-left: 20px;
-    cursor: pointer;
+.logo{
+    width: 50px;
+    float: right;
 }
-
 

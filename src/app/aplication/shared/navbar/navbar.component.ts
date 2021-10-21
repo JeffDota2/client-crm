@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
   /* redirecionamiento */
   
   godashboard(){
-    this.router.navigate(['/app/tablero']);
+    this.router.navigate(['/app/tablero/dash']);
   }
   goPerfil(){
     this.router.navigate(['/app/tablero/perfil']);

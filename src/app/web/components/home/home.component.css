@@ -1,5 +1,5 @@
-/* .we-container{
-    display: table;
+/* Fondo */
+.home{
     background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -7,9 +7,60 @@
     height:100vh;
     overflow:auto;
 }
- */
-/* .we-container .home{
-    top: 500px;
-    color: white;
 
-} */
+.contenido{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* logo */
+.px-logo {
+    margin-top: 10px;
+    width: 150px;
+}
+  
+.px-logo a img {
+    width: 55%;
+    border-radius: 50%;
+}
+
+/* card información */
+.contenido .infor{
+    width: 50%;
+    margin: 20px 0px 20px 20px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.contenido .infor h2{
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255, 0.05);
+    color: rgb(255, 255, 255);
+}
+
+.whatsapp{
+    width: 60px;
+}
+
+/* card login */
+
+.contenido .login{
+    width: 50%;
+    margin: 20px;
+    box-shadow: 5px 20px 20px 1px rgb(0, 0, 0);
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+    .contenido .infor {
+      display: none;
+    }
+
+    .contenido .login{
+        width: 100%;
+    }
+  }
