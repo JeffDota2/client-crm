@@ -1,18 +1,50 @@
 .we-clients{
+  display: flex;
+  border: 1px solid black;
     position: absolute;
-    top: 55px;
-    left: 300px;
+    top: 70px;
+    left: 290px;
 
 }
 
-table{
-    position: relative;
-    top: -300px; 
-    left: 500px;
+.form-client{
+  margin: 10px;
+  padding: 10px;
 }
 
-li{
-    color: red;
+.table-client{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+ul, li{
+  list-style: none;
+  background: rgb(247, 172, 172);
+  color: red;
+}
+
+/* estilos para los inputs */
+.form-client form  .form-group input{
+  width: 100%;
+    margin: 5px 0px 0px 0px; 
+    outline: none;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-client form  .form-group textarea{
+  width: 100%;
+  margin: 5px 0px 0px 0px;
+    outline: none;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 .form-group{
@@ -20,21 +52,47 @@ li{
     border-radius: 10px;
 }
 
+
+/* estilos a los botones de cancelar y agregar */
+.form-client form  .form-group{
+  align-items: center;
+  text-align: center;
+}
+
+.form-client form  .form-group input[type=submit]{
+  background: rgb(55, 118, 255);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  width: 100px;
+  border: none;
+}
+
+.form-client form  .form-group input[type=reset]{
+  background: rgb(187, 19, 19);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  width: 100px;
+  border: none;
+}
+
 .form-control{
     border-color: rgb(105, 95, 3);
 
 }
-.iconoInput {
-    color: #141414;
-    font-size: 15px;
-    position: absolute;
-    left: 25px;
-    width: 220%;
-    
-    padding-top: 10px;}
-    .inputPadding {
-    padding-left: 40px;
-    width: 220%;}
+
+.table-client table input[type=submit]{
+  background: rgb(187, 19, 19);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  border: none;
+}
+
 
     /* -------------------------------------------------------------------------------------------------- */
 /* ventanas modales */
@@ -62,30 +120,10 @@ li{
     width: 30%;
     border-radius: 10px;
   }
-  
-  .pop-dialog-content form {
-    padding: 0 30px;
-  }
-  
-  .pop-dialog-content form h2 {
-    color: var(--general);
-  }
-  
-  .pop-dialog-content form input, .pop-dialog-content form textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    outline: none;
-    display: inline-block;
-    border: 1px solid var(--general);
-    border-radius: 10px;
-    box-sizing: border-box;
-    resize: none;
-  }
-  
+
   .pop-dialog-content form input[type=submit] {
     width: 100%;
-    background-color: violet;
+    background-color: rgb(187, 19, 19);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -103,32 +141,27 @@ li{
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  .pop-dialog-content form input:focus, .pop-dialog-content form textarea:focus {
-    border: 3px solid var(--general);
-  }
-  
+
   .pop-dialog-content form input[type=submit]:hover {
-    background-color: green;
+    background-color: rgb(204, 22, 22);
     color: white;
   }
   
   .pop-dialog-content form input[type=reset]:hover {
-    border-color: var(--general);
-    background-color: var(--general);
-    color: white;
+    border: 1px solid black;
+    color: black;
   }
   
   /* The Close Button */
   .pop-dialog-close {
-    color: var(--we-purple-hover-light);
+    color: rgb(204, 22, 22);
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
   .pop-dialog-close:hover, .pop-dialog-close:focus {
-    color: var(--general);
+    color: black;
     text-decoration: none;
     cursor: pointer;
   }

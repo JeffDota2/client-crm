@@ -10,7 +10,7 @@
     border-radius: 50%;
   }
   
-  .displayTable {
+ /*  .displayTable {
       display: table;
       background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg);
       background-repeat:no-repeat;
@@ -19,7 +19,7 @@
       height:100vh;
       overflow:auto;
   
-  }
+  } */
     
     .displayTableCell {
       display: table-cell;
