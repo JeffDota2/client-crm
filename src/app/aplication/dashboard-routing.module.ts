@@ -7,6 +7,7 @@ import { DashComponent } from './components/dashboard/dash.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { WhatsComponent } from './components/whats/whats.component';
+import { NotifyComponent } from './components/notify/notify.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,9 @@ const routes: Routes = [
       { path: 'tablero/clientes', component: ClientsComponent },
       { path: 'tablero/perfil', component: PerfilComponent },
       { path: 'tablero/whats', component: WhatsComponent },
+      { path: 'tablero/notify', component: NotifyComponent},
       { path: '**', redirectTo: 'tablero/dash', pathMatch: 'full' },
+      
     ], /* canActivate: [AuthGuard] */
   }
 ];

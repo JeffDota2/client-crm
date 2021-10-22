@@ -10,6 +10,7 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { DashBoardRoutingModule } from './dashboard-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WhatsComponent } from './components/whats/whats.component';
+import { NotifyComponent } from './components/notify/notify.component';
 
 
 
@@ -19,7 +20,8 @@ import { WhatsComponent } from './components/whats/whats.component';
     NavbarComponent,
     ClientsComponent,
     PerfilComponent,
-    WhatsComponent
+    WhatsComponent,
+    NotifyComponent
   ],
   imports: [
     CommonModule,

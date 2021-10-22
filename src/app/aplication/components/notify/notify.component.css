@@ -1,0 +1,73 @@
+
+.chat-app .people-list {
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 9px;
+    z-index: 7
+}
+
+
+.people-list {
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.people-list .chat-list li {
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 3px
+}
+
+.people-list .chat-list li:hover {
+    background: #d87f7f;
+    cursor: pointer
+}
+
+.people-list .chat-list li.active {
+    background: #9c4848
+}
+
+.people-list .chat-list li .name {
+    font-size: 15px
+}
+
+.people-list .chat-list img {
+    width: 45px;
+    border-radius: 50%
+}
+
+.people-list img {
+    float: left;
+    border-radius: 50%
+}
+
+.people-list .about {
+    float: left;
+    padding-left: 8px
+}
+
+.people-list .status {
+    color: #999;
+    font-size: 13px
+}
+
+
+.online,
+.offline,
+.me {
+    margin-right: 2px;
+    font-size: 8px;
+    vertical-align: middle
+}
+
+.online {
+    color: #82ec11
+}
+
+.offline {
+    color: #f00808
+}
