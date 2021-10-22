@@ -1,3 +1,5 @@
+
+
 .wrapper{
     display: flex;
     position: relative;
@@ -13,6 +15,17 @@
     /* sombra al didebar */
     /* box-showdow: x y dispercion tamaño*/
     box-shadow: 0px 2px 4px 0px black;
+    overflow-y: scroll;
+}
+
+/* propiedades para el scroll */
+
+.wrapper .sidebar::-webkit-scrollbar {
+    border-left: black solid 1px;
+}
+
+.wrapper .sidebar::-webkit-scrollbar-thumb {
+    background: white;
 }
 
 .wrapper .sidebar h2{
