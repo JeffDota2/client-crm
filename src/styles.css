@@ -6,16 +6,6 @@
   box-sizing: border-box;
 }
 
-/* estilo para los componentes */
-
-.info{
-  position: absolute;
-  left: 200px;
-  margin: 20px;
-  border: 1px solid black;
-}
-
-
 body {
   margin: 0;
   padding: 0;
